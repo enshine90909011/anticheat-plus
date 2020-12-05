@@ -1,0 +1,112 @@
+#      ___
+#  ___╱   ╲   ┌─────┐┌───╮
+# ╱   ╲___╱   │     ││ ┌─╯
+# ╲___╱   ╲   │ ├─┤ ││ └─╮
+#     ╲___╱   └─┘ └─┘└───╯
+#             MatrixChecks
+#
+# The optimized checks for Matrix Anticheat, a powerful anticheat for Minecraft.
+# Made for and tested on Matrix 5.3.1+
+#
+#─── !!  NOTE  !! ────────────────────────────╮
+# THIS FILE DOES NOT INCLUDE ANY CHECKS!      │
+# INSTALL "checks.yml" TO UTILIZE THE CHANGES │
+#─────────────────────────────────────────────╯
+#
+# The changes in this file are only for organization,
+# minor tweaks, and a pre-set cloud config for MatrixChecks.
+#
+# ┌─────────────────────────────────────────────┐
+# │                  Issues?                    │
+# │ Follow the FAQs in README.md. (Question #3) │
+# └─────────────────────────────────────────────┘
+# GitHub: https://github.com/Encode42/MatrixChecks
+# Discord: https://discord.gg/rjSkFyj
+
+# Check for updates on server start.
+check_update: true
+
+# Reduce violations/flags triggered by players with high ping.
+# This can be disabled to prevent PingSpoof and rely on conditional commands.
+player_latency_protection:
+  enable: true
+
+# Downloads checks.yml from an external web server on server start.
+# Of course, I recommend using this with MatrixChecks#cloud, the minified files in the repository.
+# To enable this feature, just change "cloud_config.enable: false" to "true".
+# This will ignore your local checks.yml and update every reboot/reload!
+cloud_config:
+  enable: false
+
+  # The links to download checks from.
+  # You can have multiple links in case one goes down. (Only the first valid link is used)
+  links:
+    - 'https://raw.githubusercontent.com/Encode42/MatrixChecks/main/cloud/checks.yml'
+
+# Log all violations to a MySQL database.
+# This allows you to view violations across servers.
+database:
+  enable: false
+
+  # Database IP
+  address: 'localhost'
+
+  # Entry name
+  db: 'matrix'
+
+  username: 'root'
+  password: ''
+
+# Time between permission cache refresh. (seconds)
+# Setting this too high can cause issues with "matrix.bypass".
+permission_refresh_interval: 120
+
+# Summon a lightning strike on players who are kicked via /matrix kick.
+kick_strike_lightning: false
+
+# If enabled, Matrix will never do any setbacks/cancels.
+# Staff will still be notified of violations.
+ghost_mode: false
+
+# Premium user credentials.
+# These are obtained after DMing RE, the owner, with proof of purchase. (Don't share this!)
+premium_user:
+  user: ''
+  password: ''
+
+# Automatically disables some checks when the server TPS drops.
+# This prevents some false positives for checks that require little lag.
+tps_protection:
+  enable: true
+
+  # Disable checks below this number.
+  min_tps: 17.0
+
+  # If the server doesn't respond within this amount of time, cancel the check. (ms)
+  lag_threshold: 750
+
+# Logs all violations to the Matrix/logs directory.
+# Recommended to enable if you are debugging/monitoring checks.
+log_file: true
+
+# Delete old Matrix log files. (days)
+delete_time: 7
+
+# Disables the "matrix.bypass" permission.
+# Enable if you want EVERYONE to be checked.
+disable_bypass_permission: false
+
+# Stops players from re-logging right after being kicked. (seconds)
+relog_time: 15
+
+# Disable specific components used in checks.
+# Example:
+# disabled_components:
+#   - 'vel.ana'
+disabled_components: []
+
+# Sets a custom vl_weight for specific components.
+# Example:
+# custom_vl_weight:
+#   - 'vel.ana:4'
+custom_vl_weight: []

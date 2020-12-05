@@ -41,18 +41,6 @@ contains placeholders that require the language file.
 `config.yml` and `language.yml` **do not** include any checks!  
 Install [`checks.yml`](https://raw.githubusercontent.com/Encode42/MatrixChecks/main/checks.yml) to utilize the main detection changes.
 
-## 🔧 Setup
-### Server Usage
-1. Download [checks.yml](https://raw.githubusercontent.com/Encode42/MatrixChecks/main/checks.yml) and [language.yml](https://raw.githubusercontent.com/Encode42/MatrixChecks/main/language.yml).  
-<sub>For specific Matrix versions, head to the [releases page](https://github.com/Encode42/MatrixChecks/releases).</sub>
-2. Rename Matrix's original `checks.yml` and `language.yml` to something else. `checks.old.yml`/`language.old.yml` will work.
-3. Upload/move the new files to your Matrix plugin folder. (`/plugins/Matrix/`)
-4. If you downloaded a file besides `checks.yml` or `language.yml`, rename the file to `checks.yml`/`language.yml`.
-5. Run `/matrix reload`!
-
-Alternatively, you can just run `/matrix dlcfg POWZQTPWMD` in-game  
-to download the latest stable build of MatrixChecks. (This ID changes!)  
-The downside is that all comments are removed and the file size is reduced.
 
 ### Cloud Usage
 1. Download [config.yml](https://raw.githubusercontent.com/Encode42/MatrixChecks/main/config.yml) and [language.yml](https://raw.githubusercontent.com/Encode42/MatrixChecks/main/language.yml).  

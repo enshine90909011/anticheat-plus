@@ -32,22 +32,6 @@
 </tr>
 </table>
 
-⚠ **REQUIRED INSTALLATION NOTE:**  
-You **must** install [`language.yml`](https://raw.githubusercontent.com/Encode42/MatrixChecks/main/language.yml) to use placeholders!  
-Otherwise, many messages will be unreadable! Every message  
-contains placeholders that require the language file.
-
-⚠ **GENERAL NOTE:**  
-`config.yml` and `language.yml` **do not** include any checks!  
-Install [`checks.yml`](https://raw.githubusercontent.com/Encode42/MatrixChecks/main/checks.yml) to utilize the main detection changes.
-
-
-### Cloud Usage
-1. Download [config.yml](https://raw.githubusercontent.com/Encode42/MatrixChecks/main/config.yml) and [language.yml](https://raw.githubusercontent.com/Encode42/MatrixChecks/main/language.yml).  
-2. Rename Matrix's original `config.yml` and `language.yml` to something else. `config.old.yml`/`language.old.yml` will work.
-3. Change `cloud_config.enable: false` to `true` in `config.yml`.
-4. Run `/matrix reload`! The checks will now update on every reboot/reload.  
-<sub>For specific Matrix versions, replace `main` in the link with the compatible checks branch.</sub>
 
 ## ❔ FAQ
 These checks may not work perfectly with your server.  

@@ -9,9 +9,8 @@
 <td>
 
 
-#### Features
-- Tons of customization.
-- Improved violation & kick messages.
+#### Features.
+- Improved detection.
 - Lower amount of false positives.
 - Stricter checks. *(Faster detection)*
 </td>
@@ -20,10 +19,7 @@
 
 
 
-### 1. Checks file types
-#### checks.yml
-The main checks file. Includes all of the advertised features.  
-Conditional commands, optimized checks, increased speed, etc.
+if you need to reload it please dont do it too many times it can some times crash the plugin.
 
 
 

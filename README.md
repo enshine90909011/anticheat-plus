@@ -1,6 +1,6 @@
 
 #
-### The highly customizable, organized, and optimized checks configuration for [Anticheat](https://www.mc-market.org/resources/13999), a powerful, modern, and lightweight anticheat for Minecraft 1.8 and higher.
+### The highly organized, and optimized checks configuration for Anticheat, a powerful, modern, and lightweight anticheat for Minecraft 1.8 and higher.
 <br/>
 </div>
 
